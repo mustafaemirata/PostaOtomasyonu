@@ -39,11 +39,18 @@
             this.kuryeBTN = new System.Windows.Forms.Button();
             this.kurumsalGropu = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.kurumsalIlerle = new System.Windows.Forms.Button();
             this.kurumSicil = new System.Windows.Forms.TextBox();
+            this.KuryeGroup = new System.Windows.Forms.GroupBox();
+            this.kuryeKullaniciText = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.kuryeIlerle = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.kuryePassword = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
             this.musteriGroup.SuspendLayout();
             this.kurumsalGropu.SuspendLayout();
+            this.KuryeGroup.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -69,18 +76,17 @@
             // 
             // musteriGroup
             // 
-            this.musteriGroup.Controls.Add(this.kurumsalGropu);
+            this.musteriGroup.BackColor = System.Drawing.Color.SkyBlue;
             this.musteriGroup.Controls.Add(this.label2);
             this.musteriGroup.Controls.Add(this.musteriIlerle);
             this.musteriGroup.Controls.Add(this.musteriTakipText);
             this.musteriGroup.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.musteriGroup.Location = new System.Drawing.Point(96, 191);
+            this.musteriGroup.Location = new System.Drawing.Point(44, 171);
             this.musteriGroup.Name = "musteriGroup";
-            this.musteriGroup.Size = new System.Drawing.Size(257, 305);
+            this.musteriGroup.Size = new System.Drawing.Size(247, 245);
             this.musteriGroup.TabIndex = 1;
             this.musteriGroup.TabStop = false;
             this.musteriGroup.Text = "Müşteri Giriş";
-            this.musteriGroup.Visible = false;
             // 
             // musteriTakipText
             // 
@@ -99,9 +105,9 @@
             this.musteriIlerle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.musteriIlerle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.musteriIlerle.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.musteriIlerle.Location = new System.Drawing.Point(3, 261);
+            this.musteriIlerle.Location = new System.Drawing.Point(3, 201);
             this.musteriIlerle.Name = "musteriIlerle";
-            this.musteriIlerle.Size = new System.Drawing.Size(251, 41);
+            this.musteriIlerle.Size = new System.Drawing.Size(241, 41);
             this.musteriIlerle.TabIndex = 1;
             this.musteriIlerle.Text = "İlerle";
             this.musteriIlerle.UseVisualStyleBackColor = false;
@@ -143,6 +149,7 @@
             this.kurumsalBTN.TabIndex = 3;
             this.kurumsalBTN.Text = "Kurusal";
             this.kurumsalBTN.UseVisualStyleBackColor = false;
+            this.kurumsalBTN.Click += new System.EventHandler(this.kurumsalBTN_Click);
             // 
             // kuryeBTN
             // 
@@ -157,16 +164,17 @@
             this.kuryeBTN.TabIndex = 4;
             this.kuryeBTN.Text = "Kurye";
             this.kuryeBTN.UseVisualStyleBackColor = false;
+            this.kuryeBTN.Click += new System.EventHandler(this.kuryeBTN_Click);
             // 
             // kurumsalGropu
             // 
             this.kurumsalGropu.Controls.Add(this.kurumSicil);
             this.kurumsalGropu.Controls.Add(this.label3);
-            this.kurumsalGropu.Controls.Add(this.button1);
+            this.kurumsalGropu.Controls.Add(this.kurumsalIlerle);
             this.kurumsalGropu.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.kurumsalGropu.Location = new System.Drawing.Point(0, 0);
+            this.kurumsalGropu.Location = new System.Drawing.Point(39, 171);
             this.kurumsalGropu.Name = "kurumsalGropu";
-            this.kurumsalGropu.Size = new System.Drawing.Size(257, 305);
+            this.kurumsalGropu.Size = new System.Drawing.Size(252, 274);
             this.kurumsalGropu.TabIndex = 3;
             this.kurumsalGropu.TabStop = false;
             this.kurumsalGropu.Text = "Kurumsal Giriş";
@@ -181,20 +189,20 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Kurum Sicil";
             // 
-            // button1
+            // kurumsalIlerle
             // 
-            this.button1.BackColor = System.Drawing.Color.Moccasin;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(3, 261);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(251, 41);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "İlerle";
-            this.button1.UseVisualStyleBackColor = false;
+            this.kurumsalIlerle.BackColor = System.Drawing.Color.Moccasin;
+            this.kurumsalIlerle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.kurumsalIlerle.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.kurumsalIlerle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.kurumsalIlerle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kurumsalIlerle.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.kurumsalIlerle.Location = new System.Drawing.Point(3, 230);
+            this.kurumsalIlerle.Name = "kurumsalIlerle";
+            this.kurumsalIlerle.Size = new System.Drawing.Size(246, 41);
+            this.kurumsalIlerle.TabIndex = 1;
+            this.kurumsalIlerle.Text = "İlerle";
+            this.kurumsalIlerle.UseVisualStyleBackColor = false;
             // 
             // kurumSicil
             // 
@@ -204,12 +212,80 @@
             this.kurumSicil.Size = new System.Drawing.Size(135, 31);
             this.kurumSicil.TabIndex = 3;
             // 
+            // KuryeGroup
+            // 
+            this.KuryeGroup.BackColor = System.Drawing.Color.SkyBlue;
+            this.KuryeGroup.Controls.Add(this.kuryePassword);
+            this.KuryeGroup.Controls.Add(this.label5);
+            this.KuryeGroup.Controls.Add(this.kuryeKullaniciText);
+            this.KuryeGroup.Controls.Add(this.label4);
+            this.KuryeGroup.Controls.Add(this.kuryeIlerle);
+            this.KuryeGroup.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.KuryeGroup.Location = new System.Drawing.Point(39, 171);
+            this.KuryeGroup.Name = "KuryeGroup";
+            this.KuryeGroup.Size = new System.Drawing.Size(266, 290);
+            this.KuryeGroup.TabIndex = 4;
+            this.KuryeGroup.TabStop = false;
+            this.KuryeGroup.Text = "Kurye Giriş";
+            this.KuryeGroup.Visible = false;
+            // 
+            // kuryeKullaniciText
+            // 
+            this.kuryeKullaniciText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.kuryeKullaniciText.Location = new System.Drawing.Point(23, 79);
+            this.kuryeKullaniciText.Name = "kuryeKullaniciText";
+            this.kuryeKullaniciText.Size = new System.Drawing.Size(164, 31);
+            this.kuryeKullaniciText.TabIndex = 3;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(18, 52);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(169, 25);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Kurye Kullanıcı Adı";
+            // 
+            // kuryeIlerle
+            // 
+            this.kuryeIlerle.BackColor = System.Drawing.Color.Moccasin;
+            this.kuryeIlerle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.kuryeIlerle.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.kuryeIlerle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.kuryeIlerle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kuryeIlerle.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.kuryeIlerle.Location = new System.Drawing.Point(3, 246);
+            this.kuryeIlerle.Name = "kuryeIlerle";
+            this.kuryeIlerle.Size = new System.Drawing.Size(260, 41);
+            this.kuryeIlerle.TabIndex = 1;
+            this.kuryeIlerle.Text = "İlerle";
+            this.kuryeIlerle.UseVisualStyleBackColor = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(18, 137);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(104, 25);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Kurye Şifre";
+            // 
+            // kuryePassword
+            // 
+            this.kuryePassword.Location = new System.Drawing.Point(23, 168);
+            this.kuryePassword.Mask = "********";
+            this.kuryePassword.Name = "kuryePassword";
+            this.kuryePassword.Size = new System.Drawing.Size(164, 31);
+            this.kuryePassword.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(448, 543);
+            this.Controls.Add(this.kurumsalGropu);
+            this.Controls.Add(this.KuryeGroup);
             this.Controls.Add(this.kuryeBTN);
             this.Controls.Add(this.kurumsalBTN);
             this.Controls.Add(this.MusteriBTN);
@@ -225,6 +301,8 @@
             this.musteriGroup.PerformLayout();
             this.kurumsalGropu.ResumeLayout(false);
             this.kurumsalGropu.PerformLayout();
+            this.KuryeGroup.ResumeLayout(false);
+            this.KuryeGroup.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -243,7 +321,13 @@
         private System.Windows.Forms.GroupBox kurumsalGropu;
         private System.Windows.Forms.TextBox kurumSicil;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button kurumsalIlerle;
+        private System.Windows.Forms.GroupBox KuryeGroup;
+        private System.Windows.Forms.TextBox kuryeKullaniciText;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button kuryeIlerle;
+        private System.Windows.Forms.MaskedTextBox kuryePassword;
+        private System.Windows.Forms.Label label5;
     }
 }
 
