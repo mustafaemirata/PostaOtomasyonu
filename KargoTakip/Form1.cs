@@ -21,5 +21,10 @@ namespace KargoTakip
         {
 
         }
+
+        private void MusteriBTN_Click(object sender, EventArgs e)
+        {
+            musteriGroup.Visible = true;
+        }
     }
 }
